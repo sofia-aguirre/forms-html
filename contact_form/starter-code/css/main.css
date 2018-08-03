@@ -1,3 +1,46 @@
+/* //trying it with grid */
+.parent {
+    display: grid;
+    grid-row: repeat(4, 1fr);
+    /* //two columns, so will have to play around with padding */
+    grid-column: 1fr 1fr;
+    height: 50vh;
+    margin: 50px; 
+}
+
+input {
+    margin: 10px;
+    border-radius: 10px;
+    border: solid silver 3px;
+}
+
+.name {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+}
+.email {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.subject {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+}
+
+.message {
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+    resize: none;
+}
+
+.subject {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 2;
+    color: white;
+    background-color: green;
+}
+
+/* //trying it with flex
 body {
     /* display: flex;
     flex-wrap: wrap;
@@ -46,4 +89,4 @@ footer {
     text-align: center;
     width: 100%;
     background-color: #00000000;
-}
+} */
